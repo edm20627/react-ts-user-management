@@ -1,6 +1,5 @@
-import React, { ReactNode } from 'react'
-import { memo, VFC } from "react";
-import { Header } from '../organisms/layout/Header';
+import React, { ReactNode, memo, VFC } from 'react'
+import { Header } from '../organisms/layout/Header'
 
 type Props = {
   children: ReactNode

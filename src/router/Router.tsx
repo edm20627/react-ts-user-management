@@ -17,7 +17,7 @@ export const Router = () => (
         <Switch>
           {homeRoutes.map((route) => (
             <Route key={route.path} exact={route.exact} path={`${url}${route.path}`}>
-              {route.children}
+              <HeaderLayout>{route.children}</HeaderLayout>
             </Route>
           ))}
         </Switch>

@@ -25,13 +25,15 @@ module.exports = {
     'react',
     '@typescript-eslint',
   ],
-  "ignorePatterns": [
-    ".eslintrc.js"
+  'ignorePatterns': [
+    '.eslintrc.js'
   ],
   rules: {
-    'no-use-before-define': "off",
-    "@typescript-eslint/no-use-before-define": "off",
-    'import/prefer-default-export': "off",
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
+    'import/prefer-default-export': 'off',
+    'react/prop-types': 'off',
+    'react-hooks/exhaustive-deps': 'off',
     'import/extensions': [
       'error',
       {
@@ -54,10 +56,11 @@ module.exports = {
         allowAsStatement: true,
       },
     ],
-    "react/function-component-definition": [
+    'react/function-component-definition': [
       2,
-      { "namedComponents": "arrow-function" }
-    ]
+      { 'namedComponents': 'arrow-function' }
+    ],
+    'jsx-a11y/anchor-is-valid': 'off'
   },
   settings: {
     'import/resolver': {
