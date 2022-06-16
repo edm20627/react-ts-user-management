@@ -11,6 +11,7 @@ module.exports = {
     //ファイルの出力設定
     output: {
         path: path.join(__dirname, '/dist'), //出力先のディレクトリ（絶対パスで指定）
+        publicPath: "/", // ルートパス以外表示できない時の対処法
         filename: 'bundle.js' //出力ファイル名
     },
     //デバッグのためのSourceMap（ビルド前後の対応関係を記述したファイル）の出力設定
@@ -33,8 +34,9 @@ module.exports = {
     devServer: {
         static: path.join(__dirname, '/dist'), //表示する静的ファイル（HTML）の場所を指定
         open: true, //ブラウザを自動的に起動
-        port: 3000, //ポート番号を指定（デフォルトのポート：8080）
+        port: 3001, //ポート番号を指定（デフォルトのポート：8080）
         hot: true,
+        historyApiFallback: true, // 存在しないパスをリクエストされた場合に、404を返さずにインデックファイルを戻すようにします。
     },
     //pluginの設定
     plugins: [
