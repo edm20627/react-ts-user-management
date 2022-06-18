@@ -33,7 +33,7 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 'off',
     'import/prefer-default-export': 'off',
     'react/prop-types': 'off',
-    'react-hooks/exhaustive-deps': 'off',
+    // 'react-hooks/exhaustive-deps': 'off',
     'import/extensions': [
       'error',
       {
@@ -50,12 +50,12 @@ module.exports = {
       },
     ],
     'react/react-in-jsx-scope': 'off',
-    'no-void': [
-      'error',
-      {
-        allowAsStatement: true,
-      },
-    ],
+    // 'no-void': [
+    //   'error',
+    //   {
+    //     allowAsStatement: true,
+    //   },
+    // ],
     'react/function-component-definition': [
       2,
       { 'namedComponents': 'arrow-function' }
