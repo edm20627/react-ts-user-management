@@ -60,7 +60,8 @@ module.exports = {
       2,
       { 'namedComponents': 'arrow-function' }
     ],
-    'jsx-a11y/anchor-is-valid': 'off'
+    'jsx-a11y/anchor-is-valid': 'off',
+    'react/jsx-no-useless-fragment': 'off'
   },
   settings: {
     'import/resolver': {
